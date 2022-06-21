@@ -80,8 +80,7 @@ export class Contenedor {
 				prod.id === removeId ? true : false
 			)
 
-			const removed = this.nombreArchivo.splice(newData, 1)
-			console.log(removed)
+			let removed = this.nombreArchivo.splice(newData, 1)
 
 			await fs.promises.writeFile(
 				'./productos.json',
@@ -89,7 +88,7 @@ export class Contenedor {
 				'utf-8'
 			)
 
-			console.log(this.nombreArchivo)
+			console.log(removed)
 		} catch (err) {
 			throw new Error(`esto es un error: ${err.message}`)
 		}
