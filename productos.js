@@ -113,6 +113,24 @@ export class Contenedor {
 			console.log(`hubo un error ${err.message}`)
 		}
 	}
+
+	async updateProduct(updatedObj) {
+		try {
+			let allProds = this.getAll()
+			allProds = allProds.map((item) =>
+				item.id !== updatedObj.id ? item : updatedObj
+			)
+
+			await fs.promises.writeFile(
+				'./productos.json',
+				JSON.stringify(allProds, null, 2)
+			)
+
+			return allProds
+		} catch (err) {
+			console.log(err)
+		}
+	}
 }
 
 export const productos = new Contenedor(productsList)

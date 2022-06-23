@@ -1,26 +1,32 @@
 [
-  {
-    "title": "Gardenias",
-    "price": 80,
-    "thumbnail": "foto",
-    "id": 1
-  },
-  {
-    "title": "petunias",
-    "price": 70,
-    "thumbnail": "foto",
-    "id": 2
-  },
-  {
-    "title": "Rosas",
-    "price": 70,
-    "thumbnail": "foto",
-    "id": 3
-  },
-  {
-    "tittle": "rosas",
-    "price": "40",
-    "thumbnail": "foto agregada con post",
-    "id": 4
-  }
+	{
+		"title": "Gardenias",
+		"price": 30,
+		"thumbnail": "foto",
+		"id": 1
+	},
+	{
+		"title": "petunias",
+		"price": 70,
+		"thumbnail": "foto",
+		"id": 2
+	},
+	{
+		"title": "flecheras",
+		"price": 30,
+		"thumbnail": "foto",
+		"id": 3
+	},
+	{
+		"title": "Rosas",
+		"price": 40,
+		"thumbnail": "foto agregada con post",
+		"id": 4
+	},
+	{
+		"tittle": "Tulipan",
+		"price": 50,
+		"thumbnail": "foto agregada con post",
+		"id": 5
+	}
 ]
